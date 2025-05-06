@@ -1,3 +1,8 @@
+<?php
+    session_start();   
+    include ("connect.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +13,12 @@
     <link rel="icon" type="image/x-icon" href="assets/images/magnify glass_blue.png">
 </head>
 <body>
-    <header></header>
+    <header>
+        <?php
+            include ("header.html");
+        ?>
+    </header>
+
     <main></main>
     <footer></footer>
 
