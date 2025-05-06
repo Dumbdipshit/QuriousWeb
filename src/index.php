@@ -1,3 +1,9 @@
+<?php
+    session_start();   
+    include ("connect.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +13,10 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-    <?php
-        echo("test echo");
-    ?>
-
+    <header></header>
+    <main></main>
+    <footer></footer>
+    
     <script src="scripts/script.js"></script>
 </body>
 </html>
