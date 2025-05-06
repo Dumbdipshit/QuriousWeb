@@ -8,17 +8,10 @@
     <link rel="icon" type="image/x-icon" href="assets/images/magnify glass_blue.png">
 </head>
 <body>
-<<<<<<< Updated upstream
-
-    <?php
-        echo("test echo");
-    ?>
-
-=======
     <header></header>
     <main></main>
     <footer></footer>
->>>>>>> Stashed changes
+
     <script src="scripts/script.js"></script>
 </body>
 </html>
