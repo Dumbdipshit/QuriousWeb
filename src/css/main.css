@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: jetmono;
+    src: url(../assets/fonts/jetMono/JetBrainsMono-Regular.ttf);
+}
+body{
+    font-family: jetmono;
+}
