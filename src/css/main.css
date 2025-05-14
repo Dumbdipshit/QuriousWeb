@@ -7,6 +7,12 @@
     font-family: jetmono;
     src: url(../assets/fonts/jetMono/JetBrainsMono-Regular.ttf);
 }
+
+@font-face {
+    font-family: mainfont;
+    src: url(../assets/fonts/mainFont/kantumruy-pro-khmer-300-normal.woff);
+}
+
 body{
-    font-family: jetmono;
+    font-family: mainfont;
 }
