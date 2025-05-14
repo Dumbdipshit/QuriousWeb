@@ -20,24 +20,7 @@
     </header>
 
     <main>
-        <div class="index-main-column-container">
-
-            <div class="image-and-content-container">
-
-                <div class="image-container">
-                    <img class="image" src="assets/images/placeholder image.png">
-                </div>
-
-                <div class="website-content-container">
-                    <h1 class="title-text-container">
-                        Cool title
-                    </h1>
-                    <p class="normal-text-container">
-                        Random text test test wowow owowow
-                    </p>
-                </div>
-            </div>
-        </div>
+    
     </main>
     
     <footer></footer>
