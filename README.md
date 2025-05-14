@@ -1,2 +1,2 @@
 # QuriousWeb
-De Reis Website
+This is the github file for my travel Website
