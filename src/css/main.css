@@ -4,15 +4,69 @@
 }
 
 @font-face {
-    font-family: jetmono;
-    src: url(../assets/fonts/jetMono/JetBrainsMono-Regular.ttf);
-}
-
-@font-face {
     font-family: mainfont;
-    src: url(../assets/fonts/mainFont/kantumruy-pro-khmer-300-normal.woff);
+    src: url(../assets/fonts/mainFont/kantumruy-pro-latin-ext-700-normal.woff2);
 }
 
 body{
     font-family: mainfont;
+}
+
+.normal-text-container{
+    margin: 3.5vw;
+    margin-top: 0;
+    width: 100%;
+    color: #6F7C86;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.title-text-container{
+    color: #32393E;
+    margin: 3vw 3.5vw;
+    margin-bottom: 1vw;
+    width: 100%;
+    font-weight: 700;
+    font-size: 4vw;
+}
+
+.index-main-column-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.website-content-container{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 0.3vw;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.image-container{
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+    border-top-right-radius: 0.3vw;
+    border-top-left-radius: 0.3vw;
+}
+
+.image{
+    width: 100%;
+    height: fit-content;
+}
+
+.image-and-content-container{
+    margin-top: 10vw;
+    border-radius: 0.3vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 80%;
+    height: fit-content;
+    outline-width: 0.3vw;
+    outline-color: #C6CBD0;
+    outline-style: solid;
+    box-shadow: 0 0.3vw 0 0.27vw #C6CBD0;
 }
