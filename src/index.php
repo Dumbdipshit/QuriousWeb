@@ -15,11 +15,14 @@
 <body>
     <header>
         <?php
-            include ("header.html");
+            include ("header.php");
         ?>
     </header>
 
-    <main></main>
+    <main>
+    
+    </main>
+    
     <footer></footer>
     <script src="scripts/script.js"></script>
 </body>
