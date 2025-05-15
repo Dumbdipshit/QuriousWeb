@@ -24,12 +24,20 @@
             <div class="website-overflow-container">
                 <div class="website-image-container" >
                     <img class="image" src="assets/images/city.png" alt="city">
-                    <h1 class="website-header-eye-catcher-text">New Eridu</h1>
+                    <h1 class="website-header-eye-catcher-text">Discover with Qurious</h1>
                 </div>
 
-                <div class="website-text-container">
-                    <p class="website-normal-text">
-                        I took the image from the gacha game Zenless Zone Zero cause it looked cool and i was bored. I also took the inspiration of those fancy fashion websites
+                <div class="website-text-content-container">
+                    <h1 class="website-header-text">
+                        About us
+                    </h1>
+
+                    <p class="website-normal-text display-text">
+                        Want to fullfil your curiosity? 
+                        <br>
+                        We are here,  with Qurious you can find the nicest vaction location.
+                        <br> 
+                        To calm down or discover, were here for you!
                     </p>
                 </div>
             </div>

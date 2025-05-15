@@ -13,8 +13,18 @@ body{
 }
 
 .website-normal-text{
+    align-self: center;
+    width: 95%;
     color: #6F7C86;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
+    font-weight: 620;
+}
+
+.website-header-text{
+    width: 95%;
+    align-self: center;
+    color: #32393E;
+    font-size: 3vw;
 }
 
 .website-header-eye-catcher-text{
@@ -22,7 +32,7 @@ body{
     font-family: mainfont;
     font-weight: bold;
     color: white;
-    font-size: 12vw;
+    font-size: 8vw;
     position: absolute;
     top: 13%;
     line-height: 90%;
@@ -43,18 +53,17 @@ body{
 }
 
 .website-overflow-container{
+    margin: 2vw;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 90%;
     align-self: center;
     height: fit-content;
-    outline-color: #96a4af;
-    outline-style: solid;
-    outline-width: 0.2vw;
     border-radius: 0.2vw;
     background-color: white;
     position: relative;
+    box-shadow: 0 1px 1px #41404026, 0 2px 2px #41404026, 0 4px 4px #41404026, 0 8px 8px #41404026;
 }
 
 .website-image-container{
@@ -63,23 +72,43 @@ body{
     width: 110%;
     height: 35vw;
     transition: 0.5s;
-}.website-overflow-container:hover .website-image-container{
+}
+.website-overflow-container:hover .website-image-container{
     height: 28vw;
-}.website-overflow-container:hover .website-text-container{
+}
+.website-overflow-container:hover .website-text-content-container{
     padding-bottom: 9vw;
-}.website-overflow-container:hover .image{
+}
+.website-overflow-container:hover .image{
     filter: blur(0.3vw);
-}.website-overflow-container:hover .website-header-eye-catcher-text{
-    left: 5%;
+}
+.website-overflow-container:hover .website-header-eye-catcher-text{
+    left: 7%;
+}
+.website-overflow-container:hover .display-text{
+    top: 45%;
+    opacity: 1;
 }
 
+.display-text{
+    top: 60%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s, opacity 0.2s;
+    align-self: center;
+    width: 95%;
+    color: #6F7C86;
+    font-size: 1.5vw;
+}
 
-.website-text-container{
-    width: 98%;
+.website-text-content-container{
+    padding-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     align-self: center;
     height: fit-content;
     background-color: white;
-    padding: 2%;
     padding-bottom: 2vw;
     transition: 0.5s;
     position: relative;
