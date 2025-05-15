@@ -20,7 +20,20 @@
     </header>
 
     <main>
-    
+        <div class="website-main-column-container">
+            <div class="website-overflow-container">
+                <div class="website-image-container" >
+                    <img class="image" src="assets/images/city.png" alt="city">
+                    <h1 class="website-header-eye-catcher-text">New Eridu</h1>
+                </div>
+
+                <div class="website-text-container">
+                    <p class="website-normal-text">
+                        I took the image from the gacha game Zenless Zone Zero cause it looked cool and i was bored. I also took the inspiration of those fancy fashion websites
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
     
     <footer></footer>
