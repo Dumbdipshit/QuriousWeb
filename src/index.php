@@ -24,15 +24,15 @@
             <div class="website-overflow-container">
                 <div class="website-image-container" >
                     <img class="image" src="assets/images/city.png" alt="city">
-                    <h1 class="website-header-eye-catcher-text">Discover with Qurious</h1>
+                    <h1 class="website-header-eye-catcher-text index-about-us-eye-catcher-postion website-display-text">Discover with Qurious</h1>
                 </div>
 
-                <div class="website-text-content-container">
+                <div class="website-text-content-container index-about-us-text-position">
                     <h1 class="website-header-text">
                         About us
                     </h1>
 
-                    <p class="website-normal-text display-text">
+                    <p class="website-normal-text website-display-text">
                         Want to fullfil your curiosity? 
                         <br>
                         We are here,  with Qurious you can find the nicest vaction location.
@@ -40,6 +40,7 @@
                         To calm down or discover, were here for you!
                     </p>
                 </div>
+
             </div>
         </div>
     </main>
