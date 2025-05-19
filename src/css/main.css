@@ -163,8 +163,7 @@ when the user is on a mobile like device"*/
     width: 100%;
     height: fit-content;
     background-color: white;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
     font-weight: 550;
@@ -206,4 +205,15 @@ when the user is on a mobile like device"*/
     font-size: 20px;
     color: #6F7C86;
     margin-bottom: 20px;
+}
+
+.website-name-and-info-column-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+}
+
+.test{
+    background-color: red;
 }
