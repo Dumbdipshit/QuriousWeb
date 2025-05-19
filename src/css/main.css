@@ -136,7 +136,8 @@ when the user is on a mobile like device"*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*Ill eventually add a gap for the items*/
+    align-self: center;
+    gap: 4.5%;
 }
 
 .website-items-container{
@@ -146,15 +147,15 @@ when the user is on a mobile like device"*/
     position: relative;
     overflow: hidden;
     margin: 2.5vw 0;
-    width: 400px;
-    height: 480px;
+    width: 330px;
+    height: 410px;
     box-shadow: 0 1px 1px #41404026, 0 2px 2px #41404026, 0 4px 4px #41404026, 0 8px 8px #41404026;
-    background-color: white;
+    background-color: black;
     border-radius: 0.2vw;
 }
 
 .items-image{
-    height: 100%;
+    height: 70%;
     width: fit-content;
     align-self: center;
 }
@@ -173,7 +174,7 @@ when the user is on a mobile like device"*/
     align-self: center;
     width: 85%;
     color: #6F7C86;
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 20px;
 }
 
@@ -181,7 +182,7 @@ when the user is on a mobile like device"*/
     align-self: center;
     width: 85%;
     color: #32393E;
-    font-size: 38px;
+    font-size: 26px;
     margin-bottom: 10px;
     font-weight: 600;
 }
@@ -189,31 +190,32 @@ when the user is on a mobile like device"*/
 .website-items-text{
     align-self: center;
     width: 85%;
-    font-size: 20px;
+    font-size: 18px;
     color: #6F7C86;
     margin-bottom: 15px;
 }
 
 .website-items-country-text{
-    font-size: 22px;
+    font-size: 20px;
     color: #545f67;
 }
 
 .website-items-description-text{
     align-self: center;
     width: 85%;
-    font-size: 20px;
+    font-size: 16px;
     color: #6F7C86;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .website-name-and-info-column-container{
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 0;
+    bottom: -91px;
+    transition: 0.5s;
 }
 
 .test{
-    background-color: red;
+    background-color: #ff0000;
 }
