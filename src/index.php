@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/x-icon" href="assets/images/magnify glass_darkBlue.png">
 </head>
-<body>
+<body onload="CheckWebsiteSize()">
     <header>
         <?php
             include ("header.php");
@@ -22,9 +22,10 @@
     <main>
         <div class="website-main-column-container">
             <div class="website-overflow-container">
+                
                 <div class="website-image-container" >
-                    <img class="image" src="assets/images/city.png" alt="city">
-                    <h1 class="website-header-eye-catcher-text index-about-us-eye-catcher-postion website-display-text">Discover with Qurious</h1>
+                    <img class="image " src="assets/images/city.png" alt="city">
+                    <h1 class="website-header-eye-catcher-text index-about-us-eye-catcher-postion website-display-text">Discover <br> with <br> Qurious</h1>
                 </div>
 
                 <div class="website-text-content-container index-about-us-text-position">
@@ -45,7 +46,8 @@
         </div>
     </main>
     
-    <footer></footer>
+    <footer>
+    </footer>
     <script src="scripts/script.js"></script>
 </body>
 </html>
