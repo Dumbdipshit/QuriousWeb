@@ -135,7 +135,7 @@ when the user is on a mobile like device"*/
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     align-self: center;
     gap: 4.5%;
 }
