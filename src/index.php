@@ -28,6 +28,7 @@
                     <h1 class="website-header-eye-catcher-text index-about-us-eye-catcher-postion website-display-text">Discover <br> with <br> Qurious</h1>
                 </div>
 
+                <!-- "index-about-us-text-position" this class is only used for about us eye catcher and can be changed-->
                 <div class="website-text-content-container index-about-us-text-position">
                     <h1 class="website-header-text">
                         About us

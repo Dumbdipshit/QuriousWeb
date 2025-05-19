@@ -67,6 +67,7 @@ body{
     background-color: white;
     position: relative;
     box-shadow: 0 1px 1px #41404026, 0 2px 2px #41404026, 0 4px 4px #41404026, 0 8px 8px #41404026;
+    cursor: pointer;
 }
 .website-overflow-container:hover .image{
     filter: blur(0.3vw);
@@ -114,6 +115,7 @@ when the user is on a mobile like device"*/
     transition: 0.5s, opacity 0.2s;
 }
 
+/*This class is only used for about us eyecatcher.*/
 .index-about-us-text-position{
     bottom: -9.5vw;
 }.index-about-us-eye-catcher-postion{
