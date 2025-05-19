@@ -4,15 +4,122 @@
 }
 
 @font-face {
-    font-family: mainfont;
-    src: url(../assets/fonts/mainFont/kantumruy-pro-latin-ext-700-normal.woff2);
+    font-family: jetmono;
+    src: url(../assets/fonts/jetMono/JetBrainsMono-Regular.ttf);
 }
 
 body{
-    font-family: mainfont;
+    font-family: jetmono;
+}
+::selection{
+    background-color: #6f7c86a1;
+    color: white;
+}
+
+.website-normal-text{
+    align-self: center;
+    width: 95%;
+    color: #6F7C86;
+    font-size: clamp(12px, 2vw, 2vw);
+    font-weight: 620;
+}
+
+.website-header-text{
+    width: 95%;
+    align-self: center;
+    color: #32393E;
+    font-size: 3vw;
+}
+
+.website-header-eye-catcher-text{
+    width: fit-content;
+    font-family: jetmono;
+    font-weight: bold;
+    color: white;
+    font-size: 8vw;
+    position: absolute;
+    line-height: 90%;
+    left: -50%;
+    transition: 0.5s;
+    text-shadow: 0.5vw 0.5vw black;
+}
+
+.image{
+    width: 100%;
+    height: fit-content;
+    transition: 0.5s;
 }
 
 .website-main-column-container{
     display: flex;
     flex-direction: column;
+}
+
+.website-overflow-container{
+    margin: 2.5vw auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+    height: fit-content;
+    border-radius: 0.2vw;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 1px 1px #41404026, 0 2px 2px #41404026, 0 4px 4px #41404026, 0 8px 8px #41404026;
+    cursor: pointer;
+}
+.website-overflow-container:hover .image{
+    filter: blur(0.3vw);
+}.website-overflow-container:hover .index-about-us-text-position{
+    bottom: 0;
+}.website-overflow-container:hover .website-header-eye-catcher-text{
+    left: 7%;
+}.website-overflow-container:hover .website-display-text{
+    opacity: 1;
+}
+
+
+.website-image-container{
+    position: relative;
+    align-self: center;
+    width: 110%;
+    height: 44vw;
+    transition: 0.5s;
+}
+/*This is a attribute that is applied to "website-image-container
+when the user is on a mobile like device"*/
+.website-image-mobile-display{
+    height: fit-content;
+    margin-bottom: 5vw;
+}
+
+
+.website-text-content-container{
+    gap: 1vw;
+    padding-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    height: fit-content;
+    background-color: white;
+    padding-bottom: 2vw;
+    transition: 0.5s;
+    z-index: 1;
+    position: absolute;
+}
+
+.website-display-text{
+    opacity: 0;
+    transition: 0.5s, opacity 0.2s;
+}
+
+/*This class is only used for about us eyecatcher text.*/
+.index-about-us-text-position{
+    bottom: -9.5vw;
+}
+/*This class is only used for about us eyecatcher.*/
+.index-about-us-eye-catcher-postion{
+    top: 7.5%;
 }
