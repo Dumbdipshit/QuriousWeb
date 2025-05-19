@@ -20,6 +20,7 @@
     </header>
 
     <main>
+        <!-- This is the flex column container for the all the items in the website -->
         <div class="website-main-column-container">
 
             <!-- Dit is de eyecatcher for about us container -->
@@ -48,6 +49,33 @@
                 </div>
             </a>
 
+            <!-- This is the container of the travel options for the webiste -->
+            <div class="website-items-wrap-container">
+
+                <!-- This is the visuals for the content of the website -->
+                 <div class="website-items-container">
+                    <!-- This is the image for the locations and can be changed -->
+                    <img class="items-image" src="assets/images/city.png" alt="city">
+                    <div class="website-items-text-container">
+                        <p class="website-items-travel-to-text">
+                            Travel to:
+                        </p>
+
+                        <!-- This is the location name and the "Location" name can be changed -->
+                        <h1 class="website-items-name-text">
+                            New Eridu
+                        </h1>
+                        <p class="website-items-text">
+                            A place in: <span class="website-items-country-text">America<span>
+                        </p>
+                        <!-- This is the discription of the location. It can be changed and wont be the same. The maximun lines should be 4 lines -->
+                        <p class="website-items-description-text">
+                            This is a fictional place from the game Zenless Zone Zero. I took the image because it looked nice and it has alot of pixels.
+                        </p>
+                    </div>
+                 </div>
+
+            </div>
         </div>
     </main>
     
