@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/x-icon" href="assets/images/magnify glass_darkBlue.png">
 </head>
-<body onload="CheckWebsiteSize()">
+<body>
     <header>
         <?php
             include ("header.php");
@@ -56,6 +56,7 @@
                  <div class="website-items-container">
                     <!-- This is the image for the locations and can be changed -->
                     <img class="items-image" src="assets/images/city.png" alt="city">
+                    
                         <div class="website-name-and-info-column-container">
                             <div class="website-items-text-container">
                                 <p class="website-items-travel-to-text">
@@ -64,21 +65,21 @@
 
                                 <!-- This is the location name and the "Location" name can be changed -->
                                 <h1 class="website-items-name-text">
-                                    New Eridu
+                                    George
                                 </h1>
                                 <p class="website-items-text">
-                                    A place in: <span class="website-items-country-text">America<span>
+                                    A place in: <span class="website-items-country-text">Land wow<span>
                                 </p>
                             </div>
-                            <div class="website-items-text-container test">
-                                    <!-- This is the discription of the location. It can be changed and wont be the same. The maximun lines should be 4 lines -->
-                                    <p class="website-items-description-text">
-                                        This is a fictional place from the game Zenless Zone Zero. I took the image because it looked nice and it has alot of pixels.
+                            <div class="website-items-text-description-container">
+                                    <!-- This is the discription of the location. It can be changed and wont be the same. -->
+                                    <p class="website-items-description-text website-display-text">
+                                        Location in land wowzers from the united states of coolness it looks so cool that it makes you wow its just so wowie wow like a amazing wow so awsome  
                                     </p>
                             </div>
                         </div>
                  </div>
-                 
+
             </div>
         </div>
     </main>

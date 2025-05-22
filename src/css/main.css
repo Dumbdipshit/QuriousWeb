@@ -135,7 +135,7 @@ when the user is on a mobile like device"*/
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     align-self: center;
     gap: 4.5%;
 }
@@ -150,17 +150,32 @@ when the user is on a mobile like device"*/
     width: 330px;
     height: 410px;
     box-shadow: 0 1px 1px #41404026, 0 2px 2px #41404026, 0 4px 4px #41404026, 0 8px 8px #41404026;
-    background-color: black;
+    background-color: white;
     border-radius: 0.2vw;
+}.website-items-container:hover .website-display-text{
+    opacity: 1;
+}.website-items-container:hover .items-image{
+    filter: blur(1px);
 }
 
 .items-image{
+    transition: 0.5s;
     height: 70%;
     width: fit-content;
     align-self: center;
 }
 
 .website-items-text-container{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-weight: 550;
+}
+
+.website-items-text-description-container{
     width: 100%;
     height: fit-content;
     background-color: white;
@@ -212,10 +227,6 @@ when the user is on a mobile like device"*/
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: -91px;
+    bottom: 0;
     transition: 0.5s;
-}
-
-.test{
-    background-color: #ff0000;
 }
