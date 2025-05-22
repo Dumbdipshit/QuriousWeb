@@ -38,16 +38,20 @@ body{
 }
 
 .website-header-eye-catcher-text{
-    width: fit-content;
-    font-family: jetmono;
+    position: absolute;
+    top: -325%;
+    left: -40%;
+    height: fit-content;
     font-weight: bold;
     color: white;
     font-size: 8vw;
-    position: absolute;
+    width: 49%;
     line-height: 90%;
-    left: -50%;
-    transition: 0.5s;
     text-shadow: 0.5vw 0.5vw black;
+    transition: 0.5s;
+}
+.website-overflow-container:hover .website-header-eye-catcher-text{
+    left: 3%;
 }
 
 .image{
@@ -68,7 +72,7 @@ body{
     flex-direction: column;
     width: 90%;
     align-self: center;
-    height: fit-content;
+    height: 45vw;
     border-radius: 0.2vw;
     background-color: white;
     position: relative;
@@ -76,11 +80,7 @@ body{
     cursor: pointer;
 }
 .website-overflow-container:hover .image{
-    filter: blur(0.3vw);
-}.website-overflow-container:hover .index-about-us-text-position{
-    bottom: 0;
-}.website-overflow-container:hover .website-header-eye-catcher-text{
-    left: 7%;
+    filter: blur(1px);
 }.website-overflow-container:hover .website-display-text{
     opacity: 1;
 }
@@ -93,16 +93,8 @@ body{
     height: 44vw;
     transition: 0.5s;
 }
-/*This is a attribute that is applied to "website-image-container
-when the user is on a mobile like device"*/
-.website-image-mobile-display{
-    height: fit-content;
-    margin-bottom: 5vw;
-}
 
-
-.website-text-content-container{
-    gap: 1vw;
+.website-header-text-content-container{
     padding-top: 2vw;
     display: flex;
     flex-direction: column;
@@ -111,9 +103,28 @@ when the user is on a mobile like device"*/
     height: fit-content;
     background-color: white;
     padding-bottom: 2vw;
-    transition: 0.5s;
-    z-index: 1;
+    position: relative;
+}
+
+.website-text-content-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    height: fit-content;
+    background-color: white;
+    padding-bottom: 2vw;
+    position: relative;
+}
+
+.website-header-eye-catcher-name-and-info{
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    width: 100%;
+    height: fit-content;
+    transition: 0.5s;
 }
 
 .website-display-text{
@@ -121,21 +132,12 @@ when the user is on a mobile like device"*/
     transition: 0.5s, opacity 0.2s;
 }
 
-/*This class is only used for about us eyecatcher text.*/
-.index-about-us-text-position{
-    bottom: -8.5vw;
-}
-/*This class is only used for about us eyecatcher.*/
-.index-about-us-eye-catcher-postion{
-    top: 7.5%;
-}
-
 .website-items-wrap-container{
     width: 90%;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     align-self: center;
     gap: 4.5%;
 }
@@ -150,17 +152,32 @@ when the user is on a mobile like device"*/
     width: 330px;
     height: 410px;
     box-shadow: 0 1px 1px #41404026, 0 2px 2px #41404026, 0 4px 4px #41404026, 0 8px 8px #41404026;
-    background-color: black;
+    background-color: white;
     border-radius: 0.2vw;
+}.website-items-container:hover .website-display-text{
+    opacity: 1;
+}.website-items-container:hover .items-image{
+    filter: blur(1px);
 }
 
 .items-image{
+    transition: 0.5s;
     height: 70%;
     width: fit-content;
     align-self: center;
 }
 
 .website-items-text-container{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-weight: 550;
+}
+
+.website-items-text-description-container{
     width: 100%;
     height: fit-content;
     background-color: white;
@@ -212,10 +229,6 @@ when the user is on a mobile like device"*/
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: -91px;
+    bottom: 0;
     transition: 0.5s;
-}
-
-.test{
-    background-color: #ff0000;
 }

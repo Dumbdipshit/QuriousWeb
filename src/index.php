@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/x-icon" href="assets/images/magnify glass_darkBlue.png">
 </head>
-<body onload="CheckWebsiteSize()">
+<body onload="test()">
     <header>
         <?php
             include ("header.php");
@@ -26,28 +26,24 @@
             <!-- Dit is de eyecatcher for about us container -->
             <a href="about-us.php">
                 <div class="website-overflow-container">
-                    <div class="website-image-container" >
+                    <div class="website-image-container">
                         <img class="image " src="assets/images/city.png" alt="city">
-                        <!-- "index-about-us-eye-catcher-postion" this class is only used for the header text of about us and can be changed-->
-                        <h1 class="website-header-eye-catcher-text index-about-us-eye-catcher-postion website-display-text">Discover <br> with <br> Qurious</h1>
                     </div>
 
-                    <!-- "index-about-us-text-position" this class is only used for about us eye catcher and can be changed-->
-                    <div class="website-text-content-container index-about-us-text-position">
-                        <h1 class="website-header-text">
-                            About us
-                        </h1>
-
-                        <p class="website-normal-text website-display-text">
-                            Want to fullfil your curiosity? 
-                            <br>
-                            We are here,  with Qurious you can find the nicest vaction location.
-                            <br> 
-                            To calm down or discover, were here for you!
-                        </p>
+                    <div class="website-header-eye-catcher-name-and-info">
+                        <div class="website-header-text-content-container">
+                            <h1 class="website-header-eye-catcher-text website-display-text">Discover with Qurious</h1>
+                            <h1 class="website-header-text">
+                                About us
+                            </h1>
+                        </div>
+                        <div class="website-text-content-container">
+                            <p class="website-normal-text website-display-text">Want to fullfil your curiosity? We are here, with Qurious you can find the nicest vaction location. To calm down or discover, were here for you!</p>
+                        </div>
                     </div>
                 </div>
             </a>
+
 
             <!-- This is the container of the travel options for the webiste -->
             <div class="website-items-wrap-container">
@@ -56,6 +52,7 @@
                  <div class="website-items-container">
                     <!-- This is the image for the locations and can be changed -->
                     <img class="items-image" src="assets/images/city.png" alt="city">
+                    
                         <div class="website-name-and-info-column-container">
                             <div class="website-items-text-container">
                                 <p class="website-items-travel-to-text">
@@ -70,15 +67,15 @@
                                     A place in: <span class="website-items-country-text">America<span>
                                 </p>
                             </div>
-                            <div class="website-items-text-container test">
-                                    <!-- This is the discription of the location. It can be changed and wont be the same. The maximun lines should be 4 lines -->
-                                    <p class="website-items-description-text">
+                            <div class="website-items-text-description-container">
+                                    <!-- This is the discription of the location. It can be changed and wont be the same. -->
+                                    <p class="website-items-description-text website-display-text">
                                         This is a fictional place from the game Zenless Zone Zero. I took the image because it looked nice and it has alot of pixels.
                                     </p>
                             </div>
                         </div>
                  </div>
-                 
+
             </div>
         </div>
     </main>
