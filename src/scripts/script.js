@@ -18,3 +18,24 @@ let websiteItems = document.getElementsByClassName("website-items-container");
 for(let i = 0; i < websiteItems.length; i++){
     document.getElementsByClassName("website-items-text-description-container")[i].style.height = 0;
 }
+
+
+let websiteLocationContainer = document.getElementsByClassName("website-items-container")
+for(let i = 0; i < websiteLocationContainer.length; i++){
+            websiteLocationContainer[i].addEventListener("mouseout", RemoveHeight);
+            websiteLocationContainer[i].addEventListener("mouseover", GetHeight);
+}
+
+function RemoveHeight(){
+    let websiteTextDescription = this.getElementsByClassName("website-items-text-description-container")[0];
+    height = websiteTextDescription.offsetHeight;
+    console.log(height);
+    var locationBottom = this.getElementsByClassName("website-name-and-info-column-container")[0];
+    locationBottom.style.bottom = -height + "px";
+}
+
+function GetHeight(){
+    this.getElementsByClassName("website-items-text-description-container")[0].style.height = "fit-content";
+    var locationBottom = this.getElementsByClassName("website-name-and-info-column-container")[0];
+    locationBottom.style.bottom = 0;
+}
