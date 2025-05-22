@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/x-icon" href="assets/images/magnify glass_darkBlue.png">
 </head>
-<body>
+<body onload="test()">
     <header>
         <?php
             include ("header.php");
