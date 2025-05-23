@@ -19,7 +19,13 @@
     </header>
 
     <main>
-        About us is under construction come back later.
+        <div class="website-main-column-container">
+            <div class="about-us-eye-catcher-page">
+                <img class="about-us-image" src="assets/images/cloudless_sky.png">
+                <p class="about-us-slogan-text">Stay curious with</p>
+                <img class="website-blue-outline-logo" src="assets/images/blue_outline_logo.png">
+            </div>
+        </div>
     </main>
     
     <footer>
@@ -27,5 +33,6 @@
             include ("footer.php");
         ?>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
