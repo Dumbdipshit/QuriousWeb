@@ -23,7 +23,7 @@
         <!-- This is the flex column container for the all the items in the website -->
         <div class="website-main-column-container">
 
-            <!-- Dit is de eyecatcher for about us container -->
+            <!-- This is the website eyecatcher container -->
             <a href="about-us.php">
                 <div class="website-overflow-container">
                     <div class="website-image-container">
@@ -64,6 +64,7 @@
                                     New Eridu
                                 </h1>
                                 <p class="website-items-text">
+                                    <!-- The County text can be changed -->
                                     A place in: <span class="website-items-country-text">America<span>
                                 </p>
                             </div>
