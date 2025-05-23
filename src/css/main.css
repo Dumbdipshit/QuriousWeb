@@ -232,3 +232,36 @@ body{
     bottom: 0;
     transition: 0.5s;
 }
+
+.about-us-eye-catcher-page{
+    margin-top: 4vw;
+    width: 90%;
+    border-radius: 0.2vw;
+    height: 35vw;
+    overflow: hidden;
+    align-self: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-image{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.website-blue-outline-logo{
+    bottom: 10%;
+    width: 40%;
+    height: fit-content;
+    position: absolute;
+    align-self: center;
+}
+
+.about-us-slogan-text{
+    color: white;
+    font-size: clamp(12px, 2vw, 2vw);
+    align-self: center;
+    position: absolute;
+}
