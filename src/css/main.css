@@ -14,5 +14,294 @@
 }
 
 body{
+<<<<<<< Updated upstream
     font-family: mainfont;
+=======
+    font-family: mainFont;
+    overflow-x: hidden;
+}
+::selection{
+    background-color: #6f7c86a1;
+    color: white;
+}
+
+.website-normal-text{
+    align-self: center;
+    width: 95%;
+    color: #6F7C86;
+    font-size: clamp(12px, 2vw, 2vw);
+    font-weight: 620;
+}
+
+.website-header-text{
+    width: 95%;
+    align-self: center;
+    color: #32393E;
+    font-size: 3vw;
+}
+
+.website-header-eye-catcher-text{
+    width: fit-content;
+    font-family: jetmono;
+    font-weight: bold;
+    color: white;
+    font-size: 8vw;
+    position: absolute;
+    line-height: 90%;
+    left: -50%;
+    transition: 0.5s;
+    text-shadow: 0.5vw 0.5vw black;
+}
+
+.image{
+    width: 100%;
+    height: fit-content;
+    transition: 0.5s;
+}
+
+.website-main-column-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.website-overflow-container{
+    margin: 2.5vw auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+    height: fit-content;
+    border-radius: 0.2vw;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 1px 1px #41404026, 0 2px 2px #41404026, 0 4px 4px #41404026, 0 8px 8px #41404026;
+    cursor: pointer;
+}
+.website-overflow-container:hover .image{
+    filter: blur(0.3vw);
+}.website-overflow-container:hover .index-about-us-text-position{
+    bottom: 0;
+}.website-overflow-container:hover .website-header-eye-catcher-text{
+    left: 7%;
+}.website-overflow-container:hover .website-display-text{
+    opacity: 1;
+}
+
+
+.website-image-container{
+    position: relative;
+    align-self: center;
+    width: 110%;
+    height: 44vw;
+    transition: 0.5s;
+}
+/*This is a attribute that is applied to "website-image-container
+when the user is on a mobile like device"*/
+.website-image-mobile-display{
+    height: fit-content;
+    margin-bottom: 5vw;
+}
+
+
+.website-text-content-container{
+    gap: 1vw;
+    padding-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    height: fit-content;
+    background-color: white;
+    padding-bottom: 2vw;
+    transition: 0.5s;
+    z-index: 1;
+    position: absolute;
+}
+
+.website-display-text{
+    opacity: 0;
+    transition: 0.5s, opacity 0.2s;
+}
+
+/*This class is only used for about us eyecatcher text.*/
+.index-about-us-text-position{
+    bottom: -8.5vw;
+}
+/*This class is only used for about us eyecatcher.*/
+.index-about-us-eye-catcher-postion{
+    top: 7.5%;
+}
+
+.website-items-wrap-container{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-self: center;
+    gap: 4.5%;
+}
+
+.website-items-container{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    margin: 2.5vw 0;
+    width: 330px;
+    height: 410px;
+    box-shadow: 0 1px 1px #41404026, 0 2px 2px #41404026, 0 4px 4px #41404026, 0 8px 8px #41404026;
+    background-color: black;
+    border-radius: 0.2vw;
+}
+
+.items-image{
+    height: 70%;
+    width: fit-content;
+    align-self: center;
+}
+
+.website-items-text-container{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-weight: 550;
+}
+
+.website-items-travel-to-text{
+    align-self: center;
+    width: 85%;
+    color: #6F7C86;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.website-items-name-text{
+    align-self: center;
+    width: 85%;
+    color: #32393E;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.website-items-text{
+    align-self: center;
+    width: 85%;
+    font-size: 18px;
+    color: #6F7C86;
+    margin-bottom: 15px;
+}
+
+.website-items-country-text{
+    font-size: 20px;
+    color: #545f67;
+}
+
+.website-items-description-text{
+    align-self: center;
+    width: 85%;
+    font-size: 16px;
+    color: #6F7C86;
+    margin-bottom: 16px;
+}
+
+.website-name-and-info-column-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -91px;
+    transition: 0.5s;
+}
+
+.test{
+    background-color: #ff0000;
+}
+
+.header {
+    display: flex;
+    background-color: #4EBBF1;
+    width: 99vw;
+    height: 7.5vw;
+    flex-direction: row;
+    border-radius: 0.5vw;
+    transform: translate(0.5vw, 0.5vw);
+}
+
+.header-more-options-knop {
+    display: flex;
+    background-color: white;
+    width: 5.4vw;
+    height: 5.4vw;
+    transform: translate(1vw, 0.9vw);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 0.2vw;
+    border-bottom: 0.5vw solid #D8E1EF;
+}
+
+.more-options-knop img {
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.logo img {
+    width: 17vw;
+    height: 6.5vw;
+    transform: translateX(14vw)
+}
+
+.zoekbalk {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    border-bottom: 0.26vw solid #D8E1EF;
+    font-size: 1.55vw;
+    color: #6F7C86;
+    width: 35.44vw;
+    height: 2.04vw;
+    transform: translate(34.25vw, 2vw);
+    padding: 0.78vw;
+}
+
+.magnify-glass {
+    display: flex;
+    background-color: #ffffff;
+    width: 4.08vw;              
+    height: 7.3vh;               
+    transform: translate(34vw, 4.07vh);  
+    border-bottom: 0.26vw solid #D8E1EF;    
+    justify-content: center;
+}
+
+.container-more-options {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.16vw solid #DFE2E6;
+    border-left: none;
+    border-radius: 0 0.63vw 0.63vw 0;
+    padding: 1.48vh 0.83vw; 
+    width: 8vw;
+    height: 70.93vh;
+    transform: translateY(7vh);
+    gap: 0.72vw;
+}
+
+.home img,
+.location img,
+.group img,
+.telefoon img,
+.emoji img {
+    width: 6vw;
+    height: 6vw;
+    transform: translateX(-0.5vw);
+>>>>>>> Stashed changes
 }
