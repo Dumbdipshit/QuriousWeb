@@ -34,7 +34,7 @@ body{
     width: 95%;
     align-self: center;
     color: #32393E;
-    font-size: 3vw;
+    font-size: clamp(18px, 3vw, 3vw);
 }
 
 .website-header-eye-catcher-text{
@@ -63,6 +63,7 @@ body{
 .website-main-column-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .website-overflow-container{
@@ -231,4 +232,57 @@ body{
     position: absolute;
     bottom: 0;
     transition: 0.5s;
+}
+
+.website-introduction-container{
+    width: 90%;
+    height: 40vw;
+    box-shadow: 0 1px 1px #41404026, 0 2px 2px #41404026, 0 4px 4px #41404026, 0 8px 8px #41404026;
+    align-self: center;
+    margin-top: 3vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3vw;
+    align-items: center;
+}
+
+.website-introduction-logo-container{
+    position: absolute;
+    width: 40%;
+    height: fit-content;
+    bottom: 10%;
+    align-self: center;
+    margin-right: 5%;
+}
+
+.website-introduction-image{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+}
+
+.website-intoduction-text{
+    color: white;
+    font-size: clamp(12px, 2vw, 2vw);
+    position: absolute;
+    font-weight: bold;
+    align-self: center;
+    top: 40%;
+}
+
+.website-content-contianer{
+    margin: 3vw 0;
+    width: 90%;
+    height: fit-content;
+}
+
+.website-paragraph-text{
+    align-self: center;
+    width: 100%;
+    color: #6F7C86;
+    font-size: clamp(12px, 2vw, 2vw);
+    font-weight: 620;
+    margin: 2vw 0;
 }

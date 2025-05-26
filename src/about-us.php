@@ -19,7 +19,25 @@
     </header>
 
     <main>
-        About us is under construction come back later.
+        <!-- This is the flex column container for the all the items in the website -->
+        <div class="website-main-column-container">
+            <div class="website-introduction-container">
+                <img class="website-introduction-image" src="assets/images/cloudless sky.png" alt="sky">
+                <p class="website-intoduction-text">Stay curious with</p>
+                <img class="website-introduction-logo-container" src="assets/images/logo blue thick outline.png" alt="Qurious">
+            </div>
+
+                <div class="website-content-contianer">
+                    <h1 class="website-header-text">
+                        About us
+                    </h1>
+                    <p class="website-paragraph-text">
+                        We are Qurious, the best company for you to discover new places. From A to Z we can bring you there, somewhere in Europe? No problem
+                        somewhere in Asia? No problem, with our wide range of avaible places to go, you can always bet on us. So stay curious with Qurious                        
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
     
     <footer>
