@@ -19,7 +19,7 @@
     </header>
 
     <main>
-        <!-- This is the flex column container for the all the items in the website -->
+
         <div class="website-main-column-container">
             <div class="website-introduction-container">
                 <img class="website-introduction-image" src="assets/images/cloudless sky.png" alt="sky">
@@ -36,6 +36,11 @@
                         somewhere in Asia? No problem, with our wide range of avaible places to go, you can always bet on us. So stay curious with Qurious                        
                     </p>
                 </div>
+        <div class="website-main-column-container">
+            <div class="about-us-eye-catcher-page">
+                <img class="about-us-image" src="assets/images/cloudless_sky.png">
+                <p class="about-us-slogan-text">Stay curious with</p>
+                <img class="website-blue-outline-logo" src="assets/images/blue_outline_logo.png">
             </div>
         </div>
     </main>
@@ -45,5 +50,6 @@
             include ("footer.php");
         ?>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
