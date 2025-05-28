@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -314,6 +315,9 @@ body{
     height: fit-content;
     margin-bottom: 0;
 }
+.smaller-width{
+    width: 70%;
+}
 
 .hide-content{
     display: none;
@@ -386,4 +390,46 @@ body{
     position: absolute;
     width: 70%;
     height: fit-content;
+}
+
+.website-review-row-container{
+    margin: 2vw 0;
+    align-self: center;
+    width: 90%;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: start;
+    gap: 7%;
+    display: flex;
+}
+
+.website-profile-box{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background-color: #545f67;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image{
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+.username-text{
+    height: 100%;
+    width: fit-content;
+    color: #32393E;
+    font-size: clamp(16px, 3vw, 3vw);
+    transform: translate(0, 4.5vw);
+}
+
+.light-gray-outline{
+    border-style: solid;
+    border-color: #D8E1EF;
+    border-width: 0.05vw;
 }
