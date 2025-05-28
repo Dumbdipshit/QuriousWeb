@@ -340,8 +340,9 @@ body{
     box-shadow: 0 0.7vw 0 0 #229DDB;
     cursor: pointer;
     transition: 0.2s;
+    transform: translate(0, 0);
 }.website-blue-button:hover{
-    margin-top: 0.5vw;
+    transform: translate(0, 0.5vw);
     box-shadow: 0 0.2vw 0 0 #229DDB;
 }
 
@@ -434,4 +435,41 @@ body{
     border-style: solid;
     border-color: #D8E1EF;
     border-width: 0.05vw;
+}
+
+.review-text-box-area{
+    width: 90%;
+    height: 20vw;
+    border-radius: 0.3vw;
+    border-style: solid;
+    border-color: #D8E1EF;
+    border-width: 0.2vw;
+    resize: none;
+    color: #545f67;
+    padding: 1vw;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 3vw auto;
+    font-size: clamp(12px, 1.5vw, 1.5vw);
+}
+
+textarea:focus {
+    outline-style: none;
+}
+
+::placeholder{
+    color: #D8E1EF;
+}
+
+.medium-width{
+    width: 60%;
+    align-self: center;
+}
+
+.margin-top{
+    margin-top: 5vw;
+}
+
+.padding-bottom{
+    padding-bottom: 3vw;
 }
