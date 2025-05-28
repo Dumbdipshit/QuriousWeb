@@ -334,7 +334,7 @@ body{
     box-shadow: 0 0.7vw 0 0 #229DDB;
     cursor: pointer;
     transition: 0.2s;
-}.website-book-now-button:hover{
+}.website-blue-button:hover{
     margin-top: 0.5vw;
     box-shadow: 0 0.2vw 0 0 #229DDB;
 }
