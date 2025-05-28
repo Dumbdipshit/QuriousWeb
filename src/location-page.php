@@ -32,7 +32,7 @@
                     <h1 class="website-location-name">Country</h1>
                     <form>
                         <input class="hide-content" type="number" name="id" value="test">
-                        <input class="website-book-now-button" type="submit" value="Book now">
+                        <input class="website-blue-button" type="submit" value="Book now">
                     </form>
                 </div>
                 <!-- This container contains the price to travel to that location -->
