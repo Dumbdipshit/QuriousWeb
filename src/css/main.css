@@ -286,3 +286,104 @@ body{
     font-weight: 620;
     margin: 2vw 0;
 }
+
+.website-location-container{
+    margin: 4vw 0;
+    width: 70%;
+    height: fit-content;
+    box-shadow: 0 1px 1px #41404026, 0 2px 2px #41404026, 0 4px 4px #41404026, 0 8px 8px #41404026;
+    align-self: center;
+    border-radius: 0.3vw;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+}
+
+.location-image{
+    width: 100%;
+    height: fit-content;
+}
+
+.website-location-row-container{
+    margin: 3.5vw 0;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    height: fit-content;
+    margin-bottom: 0;
+}
+
+.hide-content{
+    display: none;
+}
+
+.website-blue-button{
+    padding: 0.5vw 2vw;
+    width: fit-content;
+    height: fit-content;
+    font-size: 3.5vw;
+    color: white;
+    font-weight: 700;
+    border-radius: 0.8vw;
+    background-color: #4EBBF1;
+    border-style: solid;
+    border-color: #229DDB;
+    border-width: 0.25vw;
+    box-shadow: 0 0.7vw 0 0 #229DDB;
+    cursor: pointer;
+    transition: 0.2s;
+}.website-book-now-button:hover{
+    margin-top: 0.5vw;
+    box-shadow: 0 0.2vw 0 0 #229DDB;
+}
+
+.website-location-name{
+    font-size: 5.5vw;
+    color: #32393E;
+}
+
+.website-location-light-text{
+    font-size: clamp(16px, 3vw, 3vw);
+    color: #545f67;
+}
+
+.website-button{
+    position: relative;
+    margin-bottom: 2vw;
+    width: 7vw;
+    height: 7vw;
+    background-color: #F2F4F7;
+    border-radius: 0.3vw;
+    border-style: solid;
+    border-color: #D8E1EF;
+    border-width: 0.2vw;
+    box-shadow: 0 0.3vw 0 0 #D8E1EF;
+    transition: 0.05s;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}.website-button:hover{
+    margin-top: 0.2vw;
+    box-shadow: 0 0.1vw 0 0 #D8E1EF;
+    margin-bottom: 1.8vw;
+}
+
+.website-form-button{
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+}
+
+.website-button-icon{
+    transform: translate(10%, 0);
+    align-self: center;
+    position: absolute;
+    width: 70%;
+    height: fit-content;
+}
