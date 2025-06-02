@@ -58,12 +58,12 @@
             <div class="website-items-wrap-container">
                 <?php
                     for($i  = 0; $i < count($result); $i++){
+                    $itemId = $result[$i]['id'];
                 ?>
                     <!-- This is the visuals for the content of the website -->
-                    <div class="website-items-container">
+                    <a class="website-items-container" href='location-page.php?id=<?php echo $itemId ?>'>
                         <!-- This is the image for the locations and can be changed -->
                         <img class="items-image" src="assets/images/city.png" alt="city">
-                        
                             <div class="website-name-and-info-column-container">
                                 <div class="website-items-text-container">
                                     <p class="website-items-travel-to-text">
@@ -86,7 +86,7 @@
                                         </p>
                                 </div>
                             </div>
-                    </div>
+                    </a>
                 <?php
                     }
                 ?>

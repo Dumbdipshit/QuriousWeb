@@ -473,3 +473,11 @@ textarea:focus {
 .padding-bottom{
     padding-bottom: 3vw;
 }
+
+.location-page-button{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+}
