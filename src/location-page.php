@@ -72,7 +72,7 @@
                 </div>
                 <!-- This contianer contains the review button -->
                 <div class="website-location-row-container">
-                    <form>
+                    <form action="write-a-review.php" method="post">
                         <input class="hide-content" type="number" name="id" value="<?php echo $result[0]["id"]; ?>">
                         <div class="website-button">
                             <input class="website-form-button" type="submit" value="Write review">

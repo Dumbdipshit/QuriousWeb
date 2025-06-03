@@ -1,6 +1,7 @@
 <?php
     session_start();   
     include ("connect.php");
+    $_SESSION["error"] = "none";
 ?>
 
 <!DOCTYPE html>
@@ -58,10 +59,9 @@
             <div class="website-items-wrap-container">
                 <?php
                     for($i  = 0; $i < count($result); $i++){
-                    $itemId = $result[$i]['id'];
                 ?>
                     <!-- This is the visuals for the content of the website -->
-                    <a class="website-items-container" href='location-page.php?id=<?php echo $itemId ?>'>
+                    <a class="website-items-container" href='location-page.php?id=<?php echo $result[$i]['id']; ?>'>
                         <!-- This is the image for the locations and can be changed -->
                         <img class="items-image" src="assets/images/city.png" alt="city">
                             <div class="website-name-and-info-column-container">
