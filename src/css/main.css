@@ -356,6 +356,10 @@ body{
     color: #545f67;
 }
 
+.smaller-text{
+    font-size: clamp(12px, 2vw, 2vw);
+}
+
 .website-button{
     position: relative;
     margin-bottom: 2vw;
@@ -457,6 +461,10 @@ textarea:focus {
     outline-style: none;
 }
 
+input:focus {
+    outline-style: none;
+}
+
 ::placeholder{
     color: #D8E1EF;
 }
@@ -472,4 +480,37 @@ textarea:focus {
 
 .padding-bottom{
     padding-bottom: 3vw;
+}
+
+.location-page-button{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+}
+
+.website-create-content-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-self: center;
+    margin-top: 2vw;
+}
+
+.website-input-style{
+    width: 100%;
+    height: 2.5vw;
+    margin-bottom: 3vw;
+    border-radius: 0.3vw;
+    border-style: solid;
+    border-color: #D8E1EF;
+    border-width: 0.2vw;
+    color: #545f67;
+    padding: 0.5vw;
+}
+
+.warning-text{
+    color: #EC4A4A;
+    margin: 2vw 0;
 }
