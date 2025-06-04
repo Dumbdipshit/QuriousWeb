@@ -15,12 +15,14 @@
         for($i  = 0; $i < count($result); $i++){
         $username = $result[$i]['username'];
         $password = $result[$i]['userPassword'];
+        $id = $result[$i]['id'];
     }
 
     if($username == $_POST['username'] &&  $password == $_POST['password']){
         $_SESSION["error"] = "none";
         $_SESSION["loggedIn"] = "true";
         $_SESSION["user"] = $username;
+        $_SESSION["id"] = $id;
         header("Location: index.php");
     }else{
         $_SESSION["error"] = "WrongPassword";

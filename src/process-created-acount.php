@@ -13,8 +13,29 @@
                     $db->bindParam(":userPassword", $_POST['password']);
                     $db->bindParam(":petName", $_POST['petName']);
                     $_SESSION["error"] = "none";
-                    header("Location: index.php");
+                    $_SESSION["loggedIn"] = "true";                    
                     $db->execute();
+
+
+            $db = $conn->prepare("
+                    SELECT * FROM Acount
+                    WHERE username=:username;
+                ");
+                $db->bindParam(":username", $_POST['username']);
+                
+                $db->execute();
+                $result = $db->fetchAll();
+
+                    for($i  = 0; $i < count($result); $i++){
+                    $username = $result[$i]['username'];
+                    $id = $result[$i]['id'];
+                }
+
+                $_SESSION["user"] = $username;
+                $_SESSION["id"] = $id;
+
+
+                    header("Location: index.php");
         }catch (PDOEXCEPTION $e){
             $_SESSION["error"] = "DuplicateUsername";
             header("Location: create-acount.php");
