@@ -13,6 +13,7 @@
                     $db->bindParam(":userPassword", $_POST['password']);
                     $db->bindParam(":petName", $_POST['petName']);
                     $_SESSION["error"] = "none";
+          
                     $_SESSION["loggedIn"] = "true";                    
                     $db->execute();
 
@@ -34,8 +35,6 @@
                 $_SESSION["user"] = $username;
                 $_SESSION["id"] = $id;
 
-
-                    header("Location: index.php");
         }catch (PDOEXCEPTION $e){
             $_SESSION["error"] = "DuplicateUsername";
             header("Location: create-acount.php");
