@@ -4,26 +4,22 @@
     include ("connect.php");
     $db = $conn->prepare("
         SELECT * FROM Acount
-        WHERE username=:username AND password=:userPassword;
+        WHERE username=:username AND userPassword=:password;
     ");
     $db->bindParam(":username", $_POST['username']);
-    $db->bindParam(":userPassword", $_POST['password']);
+    $db->bindParam(":password", $_POST['password']);
     
     $db->execute();
     $result = $db->fetchAll();
-?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php
-        echo $_POST['username'];
-        echo $_POST['password'];
-    ?>
-</body>
-</html>
+        for($i  = 0; $i < count($result); $i++){
+        $username = $result[$i]['username'];
+        $password = $result[$i]['userPassword'];
+    }
+
+    if($username == $_POST['username'] &&  $password == $_POST['password']){
+        echo "You are logged in";
+    }else{
+        echo "Wrong password or username";
+    }
+?>
