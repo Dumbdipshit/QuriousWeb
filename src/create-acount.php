@@ -35,6 +35,9 @@
                             }elseif($_SESSION["error"] == "UnMatchingPassword"){
                                 echo "The confirmed password has to be the same as your password";
                                 $_SESSION["error"] = "none";
+                            }elseif($_SESSION["error"] == "EmptyInfo"){
+                                echo "You havent filled everything in";
+                                $_SESSION["error"] = "none";
                             }
                         ?>
                     </p>
