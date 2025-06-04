@@ -1,7 +1,9 @@
 <?php
     session_start();   
     include ("connect.php");
-    $_SESSION["error"] = "none";
+    echo $_SESSION["id"];
+    echo $_SESSION["user"];
+    echo $_SESSION["loggedIn"];
 ?>
 
 <!DOCTYPE html>
