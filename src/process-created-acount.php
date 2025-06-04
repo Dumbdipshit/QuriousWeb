@@ -34,6 +34,7 @@
 
                 $_SESSION["user"] = $username;
                 $_SESSION["id"] = $id;
+                header("Location: index.php");
 
         }catch (PDOEXCEPTION $e){
             $_SESSION["error"] = "DuplicateUsername";
