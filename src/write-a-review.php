@@ -1,6 +1,8 @@
 <?php
     session_start();   
     include ("connect.php");
+    echo $_SESSION["id"];
+    echo $_POST["id"];
 ?>
 
 <!DOCTYPE html>

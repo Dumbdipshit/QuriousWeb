@@ -18,7 +18,17 @@
             include ("header.php");
         ?>
     </header>
+    <?php
+        include ("connect.php");
 
+        $db = $conn->prepare('
+            SELECT * FROM Flights WHERE id=' . $_GET["id"] . ' 
+        ');
+
+        $db->execute();
+
+        $result = $db->fetchAll();
+    ?>
     <main>
         <div class="website-main-column-container">
             
@@ -29,31 +39,41 @@
                 <!-- This container contains the book now button and the location name -->
                 <div class="website-location-row-container">
                     <!-- The location name can change -->
-                    <h1 class="website-location-name">Country</h1>
+                    <h1 class="website-location-name">
+                        <?php echo $result[0]['name'];?>
+                    </h1>
                     <form>
-                        <input class="hide-content" type="number" name="id" value="test">
+                        <input class="hide-content" type="number" name="id" value="<?php echo $result[0]["id"]; ?>">
                         <input class="website-blue-button" type="submit" value="Book now">
                     </form>
                 </div>
                 <!-- This container contains the price to travel to that location -->
                 <div class="website-location-row-container">
                     <!-- The price can change -->
-                    <span class="website-location-light-text">100.00</span>
+                    <span class="website-location-light-text">
+                        <?php echo $result[0]['price'];?>
+                    </span>
+                </div>
+                <!-- This container contains the price to travel to that location -->
+                <div class="website-location-row-container">
+                    <!-- The price can change -->
+                    <p class="website-location-light-text">A place in: 
+                        <span>
+                            <?php echo $result[0]['country'];?>
+                        </span>
+                    </p>
                 </div>
                 <!-- This container contains the description to that location -->
                 <div class="website-location-row-container">
                     <!-- The description can chnage -->
                     <p class="website-location-light-text">
-                        Test test daohdakbdha iuadhia iakk.w djl kdana kdawalwa dls c wbe local ldjjakfhak
-                        daoan ha iuadhia iakk.w djl kdana kdawalwa dls c wbe local ldjjakfhak
-                        Test test daohdakbdha iuadhia iakk.w djl kdana kdawalwa dls c wbe local ldjjakfhak
-                        daoan ha iuadhia iakk.w djl kdana kdawalwa dls c wbe local ldjjakfhak
+                        <?php echo $result[0]['description'];?>
                     </p>
                 </div>
                 <!-- This contianer contains the review button -->
                 <div class="website-location-row-container">
-                    <form>
-                        <input class="hide-content" type="number" name="id" value="test">
+                    <form action="write-a-review.php" method="post">
+                        <input class="hide-content" type="number" name="id" value="<?php echo $result[0]["id"]; ?>">
                         <div class="website-button">
                             <input class="website-form-button" type="submit" value="Write review">
                             <img class="website-button-icon" src="assets/images/write blue.png" alt="review icon">
@@ -61,6 +81,9 @@
                     </form>
                 </div>
             </div>
+
+
+
 
             <!-- This is where you display the title of the reviews -->
             <div class="website-location-row-container smaller-width">
