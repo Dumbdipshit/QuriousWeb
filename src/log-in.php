@@ -27,6 +27,14 @@
             <!-- This is the container of loggin in -->
             <form class="website-location-container light-gray-outline medium-width" action="process-log-in.php" method="post">
                 <div class="website-create-content-form">
+                    <p class="smaller-text warning-text">
+                        <?php
+                            if($_SESSION["error"] == "WrongPassword"){
+                                echo "The username or password is incorrect";
+                                $_SESSION["error"] = "none";
+                            }
+                        ?>
+                    </p>
 
                     <label class="website-location-light-text smaller-text" for="username">Username:</label>
                     <input class="website-input-style smaller-text" type="text" autocomplete="off" name="username">

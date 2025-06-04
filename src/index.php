@@ -1,6 +1,8 @@
 <?php
-    session_start();   
+    session_start();
     include ("connect.php");
+    echo $_SESSION["user"];
+    echo $_SESSION["loggedIn"];
 ?>
 
 <!DOCTYPE html>

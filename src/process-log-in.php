@@ -18,8 +18,12 @@
     }
 
     if($username == $_POST['username'] &&  $password == $_POST['password']){
-        echo "You are logged in";
+        $_SESSION["error"] = "none";
+        $_SESSION["loggedIn"] = "true";
+        $_SESSION["user"] = $username;
+        header("Location: index.php");
     }else{
-        echo "Wrong password or username";
+        $_SESSION["error"] = "WrongPassword";
+        header("Location: log-in.php");
     }
 ?>
