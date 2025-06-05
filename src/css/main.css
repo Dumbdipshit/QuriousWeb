@@ -346,6 +346,27 @@ body{
     box-shadow: 0 0.2vw 0 0 #229DDB;
 }
 
+.website-gray-button{
+    padding: 0.5vw 2vw;
+    width: fit-content;
+    height: fit-content;
+    font-size: 3.5vw;
+    color: white;
+    font-weight: 700;
+    border-radius: 0.8vw;
+    background-color: #6F7C86;
+    border-style: solid;
+    border-color: #32393E;
+    border-width: 0.25vw;
+    box-shadow: 0 0.7vw 0 0 #32393E;
+    cursor: pointer;
+    transition: 0.2s;
+    transform: translate(0, 0);
+}.website-gray-button:hover{
+    transform: translate(0, 0.5vw);
+    box-shadow: 0 0.2vw 0 0 #32393E;
+}
+
 .website-location-name{
     font-size: 5.5vw;
     color: #32393E;
@@ -513,4 +534,33 @@ input:focus {
 .warning-text{
     color: #EC4A4A;
     margin: 2vw 0;
+}
+
+.website-profile-picture-container{
+    margin: 2vw 0;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px #41404026, 0 2px 2px #41404026, 0 4px 4px #41404026, 0 8px 8px #41404026;
+    overflow: hidden;
+    background-color: #F2F4F7;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.website-profile-picture{
+    width: 100%;
+    height: fit-content;
+}
+
+.website-profile-username{
+    color: #32393E;
+    font-size: clamp(24px, 4vw, 4vw);
+}
+
+.align-self-center{
+    margin: 2vw 0;
+    align-self: center;
 }
