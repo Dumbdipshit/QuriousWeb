@@ -1,8 +1,6 @@
 <?php
     session_start();   
     include ("connect.php");
-    echo $_SESSION["id"];
-    echo $_POST["id"];
 
 ?>
 
@@ -11,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight</title>
+    <title>Sumbmit a review</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/x-icon" href="assets/images/magnify glass_darkBlue.png">
 </head>
