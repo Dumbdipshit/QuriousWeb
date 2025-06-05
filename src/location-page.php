@@ -81,6 +81,17 @@
                     </form>
                 </div>
             </div>
+            <?php
+                include ("connect.php");
+
+                $db = $conn->prepare('
+                    SELECT * FROM Reviews WHERE flightId=' . $_GET["id"] . ' 
+                ');
+
+                $db->execute();
+
+                $reviwResult = $db->fetchAll();
+            ?>
 
 
 
@@ -90,25 +101,35 @@
                 <h1 class="website-location-light-text">Reviews:</h1>
             </div>
 
-            <!-- This is where the reviews are -->
-            <div class="website-location-container light-gray-outline">
-                <div class="website-review-row-container">
-                    <!-- This container is  for the profile pic of the person who wrote the review -->
-                    <div class="website-profile-box">
-                        <!-- This is the profile image the image cna be changed -->
-                        <img class="profile-image" src="assets/images/city.png" alt=":)">
+            <?php
+                    for($i  = 0; $i < count($reviwResult); $i++){
+            ?>
+
+                <!-- This is where the reviews are -->
+                <div class="website-location-container light-gray-outline">
+                    <div class="website-review-row-container">
+                        <!-- This container is  for the profile pic of the person who wrote the review -->
+                        <div class="website-profile-box">
+                            <!-- This is the profile image the image cna be changed -->
+                            <img class="profile-image" src="assets/images/city.png" alt=":)">
+                        </div>
+                        <!-- The username can be changed -->
+                        <h1 class="username-text">
+                            <?php echo $reviwResult[$i]['username'];?>
+                        </h1>
                     </div>
-                    <!-- The username can be changed -->
-                    <h1 class="username-text">MartinCoolKid1029</h1>
+                    <!-- This is the container of the review text -->
+                    <div class="website-review-row-container">
+                        <!-- The review text can be changed -->
+                        <p class="website-location-light-text">
+                            <?php echo $reviwResult[$i]['review'];?>
+                        </p>
+                    </div>
                 </div>
-                <!-- This is the container of the review text -->
-                <div class="website-review-row-container">
-                    <!-- The review text can be changed -->
-                    <p class="website-location-light-text">
-                        Amazing place very cool i enjoyed the stay very cool awsome nice place to stay wow very nice
-                    </p>
-                </div>
-            </div>
+
+            <?php
+                }
+            ?>
             
         </div>
     </main>

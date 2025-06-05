@@ -13,8 +13,6 @@
                     $db->bindParam(":userPassword", $_POST['password']);
                     $db->bindParam(":petName", $_POST['petName']);
                     $_SESSION["error"] = "none";
-          
-                    $_SESSION["loggedIn"] = "true";                    
                     $db->execute();
 
 
@@ -31,7 +29,7 @@
                     $username = $result[$i]['username'];
                     $id = $result[$i]['id'];
                 }
-
+                $_SESSION["loggedIn"] = "true";                    
                 $_SESSION["user"] = $username;
                 $_SESSION["id"] = $id;
                 header("Location: index.php");
