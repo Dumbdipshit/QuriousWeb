@@ -7,13 +7,6 @@
     }
     
 ?>
-<?php
-echo $_POST["id"];
-?>
-<br>
-<?php
-echo $_SESSION["user"];
-?>
 
 <!DOCTYPE html>
 <html lang="en">
