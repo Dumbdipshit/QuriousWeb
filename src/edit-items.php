@@ -45,7 +45,7 @@
                             </p>
 
                             <div class="website-edit-item-button-column-container">
-                                <a  href=" .php?id=" class="edit-items-buttons">
+                                <a  href="edit-existing-items.php?id=" class="edit-items-buttons">
                                     <img class="website-button-icon edit-items-button-location" src="assets/images/admin blue_icon.png" alt="edit item button">
                                 </a>
 
