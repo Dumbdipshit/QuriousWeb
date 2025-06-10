@@ -1,4 +1,4 @@
-function test(){
+function LoadScript(){
     let websiteItems = document.getElementsByClassName("website-items-container");
     for(let i = 0; i < websiteItems.length; i++){
         let height = document.getElementsByClassName("website-items-text-description-container")[i].offsetHeight;
