@@ -29,7 +29,7 @@
             <div class="website-items-wrap-container">
 
                 <!-- This is the container for the panel to "EDIT" items -->
-                <div class="panel-options light-gray-outline">
+                <a href="edit-items.php" class="panel-options light-gray-outline">
                     <!-- This is the container for the panel image -->
                     <div class="admin-panel-image-container">
                         <img class="admin-edit-item-gear-image gear-location-one" src="assets/images/admin blue_icon.png" alt="gears">
@@ -40,11 +40,11 @@
                     <h1 class="admin-panel-name">
                         Edit items
                     </h1>
-                </div>
+                </a>
 
 
                 <!-- This is the container for the panel to "Create" items -->
-                <div class="panel-options light-gray-outline">
+                <a href="create-items.php" class="panel-options light-gray-outline">
                     <!-- This is the container for the panel image -->
                     <div class="admin-panel-image-container">
                         <img class="admin-create-items-hammer-image hammer-location" src="assets/images/hammer blue.png" alt="hammer">
@@ -55,7 +55,7 @@
                     <h1 class="admin-panel-name">
                         Create items
                     </h1>
-                </div>
+                </a>
 
             </div>
 

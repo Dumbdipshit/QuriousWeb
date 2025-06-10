@@ -575,6 +575,7 @@ input:focus {
     gap: 30px;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .admin-panel-name{
@@ -635,8 +636,8 @@ input:focus {
     animation-duration: 0.3s;
     animation-iteration-count: 4;
 }@keyframes hammer-hammering {
-  0%   {left: 5px; rotate: -20deg;}
-  75%   {left: 15px; rotate: 20deg;}
+  0%   {left: 5px; rotate: -70deg;}
+  50%   {left: 15px; rotate: 20deg;}
   100%  {rotate: 10deg;}
 }
 
