@@ -90,7 +90,7 @@
 
                 $db->execute();
 
-                $reviwResult = $db->fetchAll();
+                $reviewResult = $db->fetchAll();
             ?>
 
 
@@ -102,7 +102,7 @@
             </div>
 
             <?php
-                    for($i  = 0; $i < count($reviwResult); $i++){
+                    for($i  = 0; $i < count($reviewResult); $i++){
             ?>
 
                 <!-- This is where the reviews are -->
@@ -115,14 +115,14 @@
                         </div>
                         <!-- The username can be changed -->
                         <h1 class="username-text">
-                            <?php echo $reviwResult[$i]['username'];?>
+                            <?php echo $reviewResult[$i]['username'];?>
                         </h1>
                     </div>
                     <!-- This is the container of the review text -->
                     <div class="website-review-row-container">
                         <!-- The review text can be changed -->
                         <p class="website-location-light-text">
-                            <?php echo $reviwResult[$i]['review'];?>
+                            <?php echo $reviewResult[$i]['review'];?>
                         </p>
                     </div>
                 </div>
