@@ -42,8 +42,8 @@
                     <h1 class="website-location-name">
                         <?php echo $result[0]['name'];?>
                     </h1>
-                    <form>
-                        <input class="hide-content" type="number" name="id" value="<?php echo $result[0]["id"]; ?>">
+                    <form action="process-booking-flight.php" method="post">
+                        <input class="hide-content" type="number" name="flightId" value="<?php echo $result[0]["id"]; ?>">
                         <input class="website-blue-button" type="submit" value="Book now">
                     </form>
                 </div>
