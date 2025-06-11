@@ -28,6 +28,38 @@
         $db->execute();
 
         $result = $db->fetchAll();
+
+        $locationId = $result[0]["id"];
+        $locationName = $result[0]["name"];
+        $locationPrice = $result[0]["price"];
+        $locationCountry = $result[0]["country"];
+        $locationDescription = $result[0]['description'];
+
+
+
+        $db = $conn->prepare('
+            SELECT * FROM Acount WHERE id=' . $_SESSION["id"] . '
+        ');
+
+        $db->execute();
+
+        $result = $db->fetchAll();
+
+        $currentlyBookedId = $result[0]["bookedPlace"];
+
+        if($currentlyBookedId == $locationId){
+            $bookingDisplay = "Cancel Flight";
+            $bookingPost = "process-cancel-booking-flight.php";
+            $bookingClass = "gray";
+        }elseif($currentlyBookedId != 0){
+            $bookingDisplay = "Change Flight";
+            $bookingPost = "process-booking-flight.php";
+            $bookingClass = "blue";
+        }else{
+            $bookingDisplay = "Book Now";
+            $bookingPost = "process-booking-flight.php";
+            $bookingClass = "blue";
+        }
     ?>
     <main>
         <div class="website-main-column-container">
@@ -40,18 +72,20 @@
                 <div class="website-location-row-container">
                     <!-- The location name can change -->
                     <h1 class="website-location-name">
-                        <?php echo $result[0]['name'];?>
+                        <?php echo $locationName; ?>
                     </h1>
-                    <form action="process-booking-flight.php" method="post">
-                        <input class="hide-content" type="number" name="flightId" value="<?php echo $result[0]["id"]; ?>">
-                        <input class="website-blue-button" type="submit" value="Book now">
+
+                    <form action="<?php echo $bookingPost; ?>" method="post">
+                        <input class="hide-content" type="number" name="flightId" value="<?php echo $locationId; ?>">
+                        <input class="website-<?php echo $bookingClass; ?>-button" type="submit" value="<?php echo $bookingDisplay; ?>">
                     </form>
+
                 </div>
                 <!-- This container contains the price to travel to that location -->
                 <div class="website-location-row-container">
                     <!-- The price can change -->
                     <span class="website-location-light-text">
-                        <?php echo $result[0]['price'];?>
+                        <?php echo $locationPrice; ?>
                     </span>
                 </div>
                 <!-- This container contains the price to travel to that location -->
@@ -59,7 +93,7 @@
                     <!-- The price can change -->
                     <p class="website-location-light-text">A place in: 
                         <span>
-                            <?php echo $result[0]['country'];?>
+                            <?php echo $locationCountry; ?>
                         </span>
                     </p>
                 </div>
@@ -67,13 +101,13 @@
                 <div class="website-location-row-container">
                     <!-- The description can chnage -->
                     <p class="website-location-light-text">
-                        <?php echo $result[0]['description'];?>
+                        <?php echo $locationDescription; ?>
                     </p>
                 </div>
                 <!-- This contianer contains the review button -->
                 <div class="website-location-row-container">
                     <form action="write-a-review.php" method="post">
-                        <input class="hide-content" type="number" name="id" value="<?php echo $result[0]["id"]; ?>">
+                        <input class="hide-content" type="number" name="id" value="<?php echo $locationId; ?>">
                         <div class="website-button">
                             <input class="website-form-button" type="submit" value="Write review">
                             <img class="website-button-icon" src="assets/images/write blue.png" alt="review icon">
