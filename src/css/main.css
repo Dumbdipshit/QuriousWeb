@@ -699,21 +699,61 @@ input:focus {
 }
 
  .contact-button{
-    width: 80%;
+    width: 40vw;
     height: 7vw;
     background-color: #4EBBF1;
     align-self: center;
     border-radius: 0.6vw;
-    box-shadow: 0 0.9vw 0 0 #229DDB;
+    box-shadow: 0 0.9vw 0 0.15vw #229DDB;
     position: relative;
     font-size: 65px;
     color: white;
     text-decoration: none;
     text-align: center;
-    font-weight: bolder;
+    font-weight: 900;
+    outline-color: #229DDB;
+    outline-width: 0.2vw;
+    outline-style: solid;
  }.contact-button:hover{
-    box-shadow: 0 0.7vw 0 0 #229DDB;
+    box-shadow: 0 0.7vw 0 0.15vw #229DDB;
     top: 0.2vw;
+ }
+
+ .twitter-button-decoration{
+    background-color: #32393E;
+    box-shadow: 0 0.9vw 0 0.15vw #212527;
+    outline-color: #212527;
+ }.twitter-button-decoration:hover{
+    box-shadow: 0 0.7vw 0 0.15vw #212527;
+ }
+
+ .instagram-button{
+    background: linear-gradient(90deg,rgb(116, 49, 160) 0%, rgb(203, 21, 21) 50%, rgb(199, 119, 44) 100%);
+    width: 40.15vw;
+    height: 7.9vw;
+    align-self: center;
+    border-radius: 0.6vw;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+    text-decoration: none;
+ }
+
+ .instagram-button-decoration{
+    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    width: 40vw;
+    height: 7vw;
+    align-self: center;
+    border-radius: 0.6vw;
+    font-size: 65px;
+ }.instagram-button:hover{
+    margin-top: 0.2vw;
+    height: 7.7vw;
  }
 
 

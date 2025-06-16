@@ -32,12 +32,14 @@
                         E-Mail
                     </a>
 
-                    <a href=""  class="contact-button">
-                        Twitter
+                    <a href=""  class="contact-button twitter-button-decoration">
+                        X "Twitter"
                     </a>
 
-                    <a href=""  class="contact-button">
-                        Instagram
+                    <a href=""  class="instagram-button">
+                        <div class="instagram-button-decoration">
+                            instagram
+                        </div>
                     </a>
                 </div>
             </div>
