@@ -41,10 +41,10 @@
                     <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightPrice">
 
                     <label class="website-location-light-text smaller-text" for="password">Description:</label>
-                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightDescription">
+                    <textarea  class="website-input-style smaller-text website-textarea" autocomplete="off" name="flightDescription"></textarea>
 
                     <div class="padding-bottom">
-                        <input class="website-blue-button" type="submit" value="create"></input>
+                        <input class="website-blue-button" type="submit" value="Create"></input>
                     </div>
                 </div> 
             </form>

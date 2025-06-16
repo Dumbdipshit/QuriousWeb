@@ -769,3 +769,7 @@ input:focus {
     display: flex;
 }
 
+.website-textarea{
+    height: 20vw;
+    resize: none;
+}

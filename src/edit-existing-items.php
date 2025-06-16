@@ -13,6 +13,21 @@
     <link rel="icon" type="image/x-icon" href="assets/images/magnify glass_darkBlue.png">
 </head>
 <body>
+    <?php
+        $db = $conn->prepare('
+            SELECT * FROM Flights WHERE id=' . $_GET["id"] . ' 
+        ');
+
+        $db->execute();
+
+        $result = $db->fetchAll();
+
+        $locationId = $result[0]["id"];
+        $locationName = $result[0]["name"];
+        $locationPrice = $result[0]["price"];
+        $locationCountry = $result[0]["country"];
+        $locationDescription = $result[0]['description'];
+    ?>  
 
     <header>
         <?php
@@ -32,19 +47,19 @@
                 <div class="website-create-content-form">
 
                     <label class="website-location-light-text smaller-text" for="username">Name:</label>
-                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightName">
+                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightName" value='<?php echo $locationName; ?>'>
 
                     <label class="website-location-light-text smaller-text" for="password">Country:</label>
-                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="country">
+                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="country" value='<?php echo $locationCountry; ?>'>
 
                     <label class="website-location-light-text smaller-text" for="password">Price:</label>
-                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightPrice">
+                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightPrice" value='<?php echo $locationPrice; ?>'>
 
                     <label class="website-location-light-text smaller-text" for="password">Description:</label>
-                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightDescription">
+                    <textarea  class="website-input-style smaller-text website-textarea" autocomplete="off" name="flightDescription"><?php echo $locationDescription; ?></textarea>
 
                     <div class="padding-bottom">
-                        <input class="website-blue-button" type="submit" value="create"></input>
+                        <input class="website-blue-button" type="submit" value="Confirm"></input>
                     </div>
                 </div> 
             </form>
