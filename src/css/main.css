@@ -691,3 +691,41 @@ input:focus {
     cursor: default;
 }
 
+.contact-column-container{
+    display: flex;
+    flex-direction: column;
+    margin: 4vw 0;
+    gap: 4vw;
+}
+
+ .contact-button{
+    width: 80%;
+    height: 7vw;
+    background-color: #4EBBF1;
+    align-self: center;
+    border-radius: 0.6vw;
+    box-shadow: 0 0.9vw 0 0 #229DDB;
+    position: relative;
+    font-size: 65px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+ }.contact-button:hover{
+    box-shadow: 0 0.7vw 0 0 #229DDB;
+    top: 0.2vw;
+ }
+
+
+ .contact-location-container{
+    margin: 4vw 0;
+    width: 50%;
+    height: fit-content;
+    box-shadow: 0 1px 1px #41404026, 0 2px 2px #41404026, 0 4px 4px #41404026, 0 8px 8px #41404026;
+    align-self: center;
+    border-radius: 0.3vw;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+}
+
