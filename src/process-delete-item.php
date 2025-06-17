@@ -6,6 +6,11 @@
     ");
     $db->execute();
 
+    $db = $conn->prepare("
+        DELETE FROM Reviews WHERE flightId=" . $_GET['id'] . ";
+    ");
+    $db->execute();
+
     $cancelVar = 0;
     
     $sql = "UPDATE Acount
@@ -15,6 +20,8 @@
             $db = $conn->prepare($sql);
                 $db->bindParam(":flightId", $_GET['id']);
             $db->execute();
+    
+    
 
     header("Location: edit-items.php");
 ?>

@@ -142,7 +142,7 @@
                     <div class="website-review-row-container">
                         <!-- This container is  for the profile pic of the person who wrote the review -->
                         <div class="website-profile-box">
-                            <!-- This is the profile image the image cna be changed -->
+                            <!-- This is the profile image the image can be changed -->
                             <img class="profile-image" src="assets/images/city.png" alt=":)">
                         </div>
                         <!-- The username can be changed -->

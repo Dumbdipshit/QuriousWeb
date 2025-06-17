@@ -342,6 +342,7 @@ body{
     cursor: pointer;
     transition: 0.2s;
     transform: translate(0, 0);
+    text-decoration: none;
 }.website-blue-button:hover{
     transform: translate(0, 0.5vw);
     box-shadow: 0 0.2vw 0 0 #229DDB;
@@ -363,6 +364,7 @@ body{
     cursor: pointer;
     transition: 0.2s;
     transform: translate(0, 0);
+    text-decoration: none;
 }.website-gray-button:hover{
     transform: translate(0, 0.5vw);
     box-shadow: 0 0.2vw 0 0 #32393E;
@@ -782,4 +784,25 @@ input:focus {
 .website-textarea{
     height: 20vw;
     resize: none;
+}
+
+.margin-bottom{
+    margin-bottom: 5vw;
+}
+
+.website-button-row-container{
+    align-self: center;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.view-button-location{
+    position: relative;
+    bottom: 1.5vw;
+}
+
+.smaller-gap{
+    gap: 1vw;
 }
