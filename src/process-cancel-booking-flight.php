@@ -16,6 +16,8 @@
                 $db->bindParam(":flightId", $cancelVar);
             $db->execute();
 
+            $_SESSION["flight"] = 0;
+
 
     header("Location: location-page.php?id=".$_POST['flightId']);
 ?>
