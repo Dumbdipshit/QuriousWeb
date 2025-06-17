@@ -1,8 +1,8 @@
 <?php
     session_start();   
     include ("connect.php");
-    if($_SESSION["loggedIn"] == "false"){
-        header("Location: log-in.php");
+    if($_SESSION["loggedIn"] == "true"){
+        header("Location: profile.php");
     }
 ?>
 
