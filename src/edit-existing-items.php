@@ -45,6 +45,7 @@
             <!-- This is the container of creating a new flight -->
             <form class="website-location-container light-gray-outline medium-width" action="process-edited-item.php" method="post">
                 <div class="website-create-content-form">
+                    <input class="hide-content" type="number" name="flightId" value="<?php echo $locationId; ?>">
 
                     <label class="website-location-light-text smaller-text" for="username">Name:</label>
                     <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightName" value='<?php echo $locationName; ?>'>

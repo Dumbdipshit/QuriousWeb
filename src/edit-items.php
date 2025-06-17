@@ -59,7 +59,7 @@
                                         <img class="website-button-icon edit-items-button-location" src="assets/images/admin blue_icon.png" alt="edit item button">
                                     </a>
 
-                                    <a  href=" .php?id=<?php echo $result[$i]['id']; ?>" class="edit-items-buttons">
+                                    <a  href=" process-delete-item.php?id=<?php echo $result[$i]['id']; ?>" class="edit-items-buttons">
                                         <img class="website-button-icon edit-items-button-location" src="assets/images/trashcan gray.png" alt="edit item button">
                                     </a>
                                 </div>
