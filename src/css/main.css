@@ -235,6 +235,7 @@ body{
     position: absolute;
     bottom: 0;
     transition: 0.5s;
+    width: 100%;
 }
 
 .website-introduction-container{
@@ -769,3 +770,7 @@ input:focus {
     display: flex;
 }
 
+.website-textarea{
+    height: 20vw;
+    resize: none;
+}

@@ -5,4 +5,6 @@
     $_SESSION["user"] = "none";
     $_SESSION["loggedIn"] = "false";
     header("Location: log-in.php");
+
+    
 ?>
