@@ -1,6 +1,9 @@
 <?php
     session_start();   
     include ("connect.php");
+    if($_SESSION["isAdmin"] == "false"){
+        header("Location: index.php");
+    }
 ?>
 
 <!DOCTYPE html>

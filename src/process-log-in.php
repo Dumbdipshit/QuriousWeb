@@ -16,6 +16,7 @@
             $username = $result[$i]['username'];
             $password = $result[$i]['userPassword'];
             $id = $result[$i]['id'];
+            $isAdmin = $result[$i]['isAdmin'];
         }
 
     if($username == $_POST['username'] &&  $password == $_POST['password']){
@@ -23,6 +24,13 @@
         $_SESSION["loggedIn"] = "true";
         $_SESSION["user"] = $username;
         $_SESSION["id"] = $id;
+
+        if($isAdmin == 1){
+            $_SESSION["isAdmin"] = "true";
+        }else{
+            $_SESSION["isAdmin"] = "false";
+        }
+
         header("Location: index.php");
     }else{
         $_SESSION["error"] = "WrongPassword";
