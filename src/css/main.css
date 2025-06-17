@@ -841,6 +841,7 @@ input:focus {
     border-style: none;
     font-size: clamp(11px, 1.8vw, 1.8vw);
     color: #32393E;
+    padding-left: 1vw;
 }
 
 .search-form-container{
