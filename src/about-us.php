@@ -44,9 +44,9 @@
                     </h1>
                     <p class="website-paragraph-text">
                         -We can cancel your flight anytime without given reason<br>
-                        -You arent allowed to make bombs or bom threats to our flights<br>
+                        -You arent allowed to make bombs or bomb threats to our flights<br>
                         -We are legally allowed to harvest your organs if you agree with our terms of service<br>
-                        -Being near the contact page for more than 7 seconds is considered accepting our terms of service<br>
+                        -Being near the about us page for more than 7 seconds is considered accepting our terms of service<br>
                     </p>
                 </div>
     </main>

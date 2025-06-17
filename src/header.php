@@ -17,8 +17,8 @@
                     <img class="header-logo-image" src="assets/images/name white.png" alt="Qurious">
                 </div>
 
-                <form class="search-form-container" action="post">
-                    <input class="header-search" autocomplete="off" type="text">
+                <form class="search-form-container" action="search-flight.php" method="post">
+                    <input class="header-search" autocomplete="off" name="search" type="text">
 
                     <div class="sumbit-search-container">
                         <input class="sumbit-search-button" type="submit" value="">
