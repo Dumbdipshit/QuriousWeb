@@ -32,6 +32,13 @@
                 $_SESSION["loggedIn"] = "true";                    
                 $_SESSION["user"] = $username;
                 $_SESSION["id"] = $id;
+
+                if($isAdmin == 1){
+                    $_SESSION["isAdmin"] = "true";
+                }else{
+                    $_SESSION["isAdmin"] = "false";
+                }
+                
                 header("Location: index.php");
 
         }catch (PDOEXCEPTION $e){
