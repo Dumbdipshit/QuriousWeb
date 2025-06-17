@@ -12,4 +12,5 @@
         $db->bindParam(":flightDescription", $_POST['flightDescription']);
 
         $db->execute();
+        header("Location: edit-items.php");
 ?>

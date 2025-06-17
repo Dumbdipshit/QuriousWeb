@@ -44,8 +44,9 @@
 
                     <label class="website-location-light-text smaller-text" for="password">Password:</label>
                     <input class="website-input-style smaller-text" type="text" autocomplete="off" name="password">
-
-
+                    
+                    <a class="smaller-text text-link" href="change-password.php">forgot password</a>
+                    <a class="smaller-text text-link" href="create-acount.php">you dont have a acount?</a>
                     <div class="padding-bottom">
                         <input class="website-blue-button" type="submit" value="Log in"></input>
                     </div>

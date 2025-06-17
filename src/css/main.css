@@ -382,6 +382,15 @@ body{
     font-size: clamp(12px, 2vw, 2vw);
 }
 
+.text-link{
+    text-decoration: none;
+    color: #545f67;
+    margin-bottom: 2vw;
+}.text-link:hover{
+    text-decoration: underline;
+    color: #545f67;
+}
+
 .website-button{
     position: relative;
     margin-bottom: 2vw;
