@@ -16,6 +16,7 @@
     <?php
         $db = $conn->prepare("
             SELECT * FROM Flights
+            WHERE name  LIKE '%". $_POST["search"] ."%';
         ");
 
         $db->execute();
@@ -29,31 +30,9 @@
     </header>
 
     <main>
+
         <!-- This is the flex column container for the all the items in the website -->
         <div class="website-main-column-container">
-
-            <!-- This is the website eyecatcher container -->
-            <a href="about-us.php">
-                <div class="website-overflow-container">
-                    <div class="website-image-container">
-                        <img class="image " src="assets/images/city.png" alt="city">
-                    </div>
-
-                    <div class="website-header-eye-catcher-name-and-info">
-                        <div class="website-header-text-content-container">
-                            <h1 class="website-header-eye-catcher-text website-display-text">Discover with Qurious</h1>
-                            <h1 class="website-header-text">
-                                About us
-                            </h1>
-                        </div>
-                        <div class="website-text-content-container">
-                            <p class="website-normal-text website-display-text">Want to fullfil your curiosity? We are here, with Qurious you can find the nicest vaction location. To calm down or discover, were here for you!</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-
             <!-- This is the container of the travel options for the webiste -->
             <div class="website-items-wrap-container">
                 <?php

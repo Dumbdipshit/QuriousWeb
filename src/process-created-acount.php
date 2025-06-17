@@ -13,8 +13,6 @@
                     $db->bindParam(":userPassword", $_POST['password']);
                     $db->bindParam(":petName", $_POST['petName']);
                     $_SESSION["error"] = "none";
-          
-                    $_SESSION["loggedIn"] = "true";                    
                     $db->execute();
 
 
@@ -31,9 +29,16 @@
                     $username = $result[$i]['username'];
                     $id = $result[$i]['id'];
                 }
-
+                $_SESSION["loggedIn"] = "true";                    
                 $_SESSION["user"] = $username;
                 $_SESSION["id"] = $id;
+
+                if($isAdmin == 1){
+                    $_SESSION["isAdmin"] = "true";
+                }else{
+                    $_SESSION["isAdmin"] = "false";
+                }
+                
                 header("Location: index.php");
 
         }catch (PDOEXCEPTION $e){

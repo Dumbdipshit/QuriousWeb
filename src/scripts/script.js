@@ -1,4 +1,4 @@
-function test(){
+function LoadScript(){
     let websiteItems = document.getElementsByClassName("website-items-container");
     for(let i = 0; i < websiteItems.length; i++){
         let height = document.getElementsByClassName("website-items-text-description-container")[i].offsetHeight;
@@ -47,4 +47,18 @@ function GetEyeCactherHeight(){
     this.getElementsByClassName("website-header-eye-catcher-name-and-info")[0].style.height = "fit-content";
     let locationBottom = this.getElementsByClassName("website-header-eye-catcher-name-and-info")[0];
     locationBottom.style.bottom = 0;
+}
+
+let sideBarActive = false;
+
+function ActivateSideBar(){
+    let sideBar = document.getElementsByClassName("menu-side-bar-options")[0];
+
+    if(sideBarActive == false){
+        sideBar.classList.add("hide-menu-side-bar");
+        sideBarActive = true;
+    }else{
+        sideBar.classList.remove("hide-menu-side-bar");
+        sideBarActive = false;
+    }
 }
