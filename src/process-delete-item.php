@@ -9,7 +9,7 @@
     $cancelVar = 0;
     
     $sql = "UPDATE Acount
-            set bookedPlace= :$cancelVar
+            set bookedPlace= $cancelVar
             WHERE bookedPlace = :flightId";
 
             $db = $conn->prepare($sql);
