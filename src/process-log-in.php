@@ -17,6 +17,7 @@
             $password = $result[$i]['userPassword'];
             $id = $result[$i]['id'];
             $isAdmin = $result[$i]['isAdmin'];
+            $flight = $result[$i]['bookedPlace'];
         }
 
     if($username == $_POST['username'] &&  $password == $_POST['password']){
@@ -24,6 +25,7 @@
         $_SESSION["loggedIn"] = "true";
         $_SESSION["user"] = $username;
         $_SESSION["id"] = $id;
+        $_SESSION["flight"] = $flight;
 
         if($isAdmin == 1){
             $_SESSION["isAdmin"] = "true";

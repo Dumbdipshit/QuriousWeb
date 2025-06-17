@@ -54,11 +54,11 @@ let sideBarActive = false;
 function ActivateSideBar(){
     let sideBar = document.getElementsByClassName("menu-side-bar-options")[0];
 
-    if(sideBarActive == true){
-        sideBar.classList.remove("hide-menu-side-bar");
-        sideBarActive = false;
-    }else{
+    if(sideBarActive == false){
         sideBar.classList.add("hide-menu-side-bar");
         sideBarActive = true;
+    }else{
+        sideBar.classList.remove("hide-menu-side-bar");
+        sideBarActive = false;
     }
 }

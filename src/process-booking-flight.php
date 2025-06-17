@@ -16,6 +16,8 @@
                 $db->bindParam(":flightId", $_POST['flightId']);
             $db->execute();
 
+            $_SESSION["flight"] = $_POST['flightId'];
+
     header("Location: location-page.php?id=".$_POST['flightId']);
     }
 ?>

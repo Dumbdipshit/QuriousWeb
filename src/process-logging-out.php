@@ -5,6 +5,7 @@
     $_SESSION["id"] = "none";
     $_SESSION["loggedIn"] = "false";
     $_SESSION["isAdmin"] = "false";
+    $_SESSION["flight"] = 0;
 
     header("Location: log-in.php");
 
