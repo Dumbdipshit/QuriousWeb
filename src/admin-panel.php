@@ -53,13 +53,15 @@
                         <img class="admin-create-items-hammer-image hammer-location" src="assets/images/hammer blue.png" alt="hammer">
                         <img class="admin-create-items-bricks-image bricks-location" src="assets/images/bricks blue.png" alt="bricks">
                     </div>
-
+                    
                     <!-- This is the container for the panel name -->
                     <h1 class="admin-panel-name">
                         Create items
                     </h1>
                 </a>
-
+                <a href="view-user-booked-flights.php" class="website-blue-button margin-top margin-bottom">
+                    View booked flights of users
+                </a>
             </div>
 
         </div>
