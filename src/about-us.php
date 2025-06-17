@@ -37,6 +37,18 @@
                         somewhere in Asia? No problem, with our wide range of avaible places to go, you can always bet on us. So stay curious with Qurious                        
                     </p>
                 </div>
+                
+                <div class="website-content-contianer">
+                    <h1 class="website-header-text">
+                        general terms and conditions
+                    </h1>
+                    <p class="website-paragraph-text">
+                        -We can cancel your flight anytime without given reason<br>
+                        -You arent allowed to make bombs or bom threats to our flights<br>
+                        -We are legally allowed to harvest your organs if you agree with our terms of service<br>
+                        -Being near the contact page for more than 7 seconds is considered accepting our terms of service<br>
+                    </p>
+                </div>
     </main>
     
     <footer>
