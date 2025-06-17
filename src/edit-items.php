@@ -68,7 +68,7 @@
                             <div class="website-items-text-description-container">
                                 <!-- This is the discription of the location. It can be changed and wont be the same. -->
                                 <p class="website-items-description-text website-display-text">
-                                    <?php echo $result[$i]['description'];?>
+
                                 </p>
                             </div>
                         </div>

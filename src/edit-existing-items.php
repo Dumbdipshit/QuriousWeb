@@ -45,16 +45,16 @@
             <!-- This is the container of creating a new flight -->
             <form class="website-location-container light-gray-outline medium-width" action="process-edited-item.php" method="post">
                 <div class="website-create-content-form">
-                    <input class="hide-content" type="number" name="flightId" value="<?php echo $locationId; ?>">
+                    <input class="hide-content" type="number" name="flightId" value="<?php echo $locationId; ?>" required>
 
                     <label class="website-location-light-text smaller-text" for="username">Name:</label>
-                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightName" value='<?php echo $locationName; ?>'>
+                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightName" value='<?php echo $locationName; ?>' required>
 
                     <label class="website-location-light-text smaller-text" for="password">Country:</label>
-                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="country" value='<?php echo $locationCountry; ?>'>
+                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="country" value='<?php echo $locationCountry; ?>' required>
 
                     <label class="website-location-light-text smaller-text" for="password">Price:</label>
-                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightPrice" value='<?php echo $locationPrice; ?>'>
+                    <input class="website-input-style smaller-text" type="number" autocomplete="off" name="flightPrice" value='<?php echo $locationPrice; ?>'   min="0.00" max="10000.00" step="0.01">
 
                     <label class="website-location-light-text smaller-text" for="password">Description:</label>
                     <textarea  class="website-input-style smaller-text website-textarea" autocomplete="off" name="flightDescription"><?php echo $locationDescription; ?></textarea>

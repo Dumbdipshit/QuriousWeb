@@ -5,7 +5,7 @@
 
     if($_SESSION["loggedIn"] == "false"){
         header("Location: log-in.php");
-    }
+    }else{
 
     $sql = "UPDATE Acount
             set id = :id, bookedPlace= :flightId
@@ -17,4 +17,5 @@
             $db->execute();
 
     header("Location: location-page.php?id=".$_POST['flightId']);
+    }
 ?>

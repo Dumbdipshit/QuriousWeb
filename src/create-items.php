@@ -32,13 +32,13 @@
                 <div class="website-create-content-form">
 
                     <label class="website-location-light-text smaller-text" for="username">Name:</label>
-                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightName">
+                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightName"  required>
 
                     <label class="website-location-light-text smaller-text" for="password">Country:</label>
-                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="country">
+                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="country"  required>
 
                     <label class="website-location-light-text smaller-text" for="password">Price:</label>
-                    <input class="website-input-style smaller-text" type="text" autocomplete="off" name="flightPrice">
+                    <input class="website-input-style smaller-text" type="number" autocomplete="off" name="flightPrice" min="0.00" max="10000.00" step="0.01">
 
                     <label class="website-location-light-text smaller-text" for="password">Description:</label>
                     <textarea  class="website-input-style smaller-text website-textarea" autocomplete="off" name="flightDescription"></textarea>
