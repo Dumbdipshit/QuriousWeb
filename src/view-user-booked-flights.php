@@ -15,8 +15,9 @@
 <body onload="LoadScript()">
     <?php
         $db = $conn->prepare("
-            SELECT * FROM Flights
-        ");
+        SELECT * FROM Acount
+        WHERE bookedPlace <> 0;
+    ");
 
         $db->execute();
         $result = $db->fetchAll();
@@ -33,31 +34,36 @@
         <div class="website-main-column-container">
                 <h1 class="website-location-light-text align-self-center">Booked Flights:</h1>
                 
-                <div class="website-location-container light-gray-outline">
-                    <div class="website-review-row-container smaller-gap">
-                        <div class="website-profile-box">
-                            <!-- This is the profile image the image can be changed -->
-                            <img class="profile-image" src="assets/images/city.png" alt=":)">
+                <?php
+                    for($i  = 0; $i < count($result); $i++){
+                        $flightId = $result[$i]['bookedPlace'];
+                ?>
+                    <div class="website-location-container light-gray-outline">
+                        <div class="website-review-row-container smaller-gap">
+                            <div class="website-profile-box">
+                                <!-- This is the profile image the image can be changed -->
+                                <img class="profile-image" src="assets/images/city.png" alt=":)">
+                            </div>
+                            <!-- The username can be changed -->
+                            <h1 class="username-text">
+                                <?php echo $result[$i]['username'];?>
+                            </h1>
                         </div>
-                        <!-- The username can be changed -->
-                        <h1 class="username-text">
-                            Username
-                        </h1>
+                        <div class="website-button-row-container padding-bottom">
+                            <!-- The Location  can be changed -->
+                            <p class="website-location-light-text">
+                                Booked location id: <span><?php echo $flightId; ?></span>
+                            </p>
+
+                            <a class="view-button-location" href='location-page.php?id=<?php echo $flightId; ?>'>
+                                <input class="website-blue-button" type="submit" value="View">
+                            </a>
+                        </div>
+
                     </div>
-
-                    <div class="website-row-container padding-bottom">
-                        <!-- The Location  can be changed -->
-                        <p class="website-location-light-text">
-                            Booked: <span>Location</span>
-                        </p>
-
-                        <form class="view-button-location" action="" method="post">
-                            <input class="hide-content" type="number" name="flightId" value="0">
-                            <input class="website-blue-button" type="submit" value="View">
-                        </form>
-                    </div>
-
-                </div>
+                <?php
+                    }
+                ?>
 
         </div>
     </main>
