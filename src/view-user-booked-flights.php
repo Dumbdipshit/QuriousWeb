@@ -38,7 +38,7 @@
                     for($i  = 0; $i < count($result); $i++){
                         $flightId = $result[$i]['bookedPlace'];
                 ?>
-                    <div class="website-location-container light-gray-outline">
+                    <div class="website-location-container light-gray-outline smaller-vertical-margin">
                         <div class="website-review-row-container smaller-gap">
                             <div class="website-profile-box">
                                 <!-- This is the profile image the image can be changed -->

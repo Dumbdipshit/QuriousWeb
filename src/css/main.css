@@ -806,3 +806,7 @@ input:focus {
 .smaller-gap{
     gap: 1vw;
 }
+
+.smaller-vertical-margin{
+    margin: 1.5vw 0;
+}
