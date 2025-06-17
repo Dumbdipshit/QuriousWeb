@@ -45,9 +45,8 @@
             $_SESSION["error"] = "DuplicateUsername";
             header("Location: create-acount.php");
         }
-    }else{
+    }elseif($_POST['password'] != $_POST['confirmPassword']){
         $_SESSION["error"] = "UnMatchingPassword";
         header("Location: create-acount.php");
-
     }
 ?>
